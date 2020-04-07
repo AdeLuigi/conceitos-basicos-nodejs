@@ -18,7 +18,7 @@ $ yarn dev
 
 ## O que você verá implementado?
 
-* métodos como POST, GET, PUT, DELETE
+* Métodos como POST, GET, PUT, DELETE
 * Diferenciação de rotas
 * Validação de id
 * Retorno de status da requisição (200. 404, 204)
