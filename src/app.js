@@ -57,7 +57,7 @@ app.put("/repositories/:id", (request, response) => {
     likes: repositories[repositoryIndex].likes
   }
 
-  repositories.push(repositoryUpdate);
+  repositories[repositoryIndex] = repositoryUpdate;
 
   return response.status(200).json(repositoryUpdate);
 
@@ -76,9 +76,9 @@ app.delete("/repositories/:id", (request, response) => {
   if(repositoryIndex < 0){
     return response.status(404).json({message:"Esse id é valido mas não tá no array"});
   }
-  console.log(repositories.length)
+
   repositories.splice(repositoryIndex, 1);
-  console.log(repositories.length)
+
   return response.status(204).send()
 
 });
