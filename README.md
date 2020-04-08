@@ -27,7 +27,7 @@ $ yarn dev
 
 ---
 
-## 1 - Métodos
+## A aplicação
 O método POST é utilizado de duas formas na aplicação. A primeira consiste em uma postagem de um repositório, veja o exemplo abaixo:
 
 ``` javascript
